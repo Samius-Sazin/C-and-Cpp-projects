@@ -5,10 +5,14 @@
             Batch_63
             Department of C.S.E
             Daffodil International University
+            
+            Starting Date   : 24.05.2023
+            Completion Date : 29.05.2023
 */
 
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 struct node
 {
@@ -45,7 +49,7 @@ int main()
 
     do
     {
-        ANSWER = '-1';
+        ANSWER = ' ';
         printf("\n\t\t.......... PHONEBOOK MENUE ..........\n\n");
         printf("\t\t1. Add new contact\n");
         printf("\t\t2. View Contact List\n");
@@ -331,7 +335,7 @@ void Edit_Contacts()
                 int Choice;
                 char CH, new_name[30], new_number[20], new_gmail[40];
 
-                printf("\n\t\t1. Change Name\n\t\t2. Change Number\n\t\t3. Change Email");
+                printf("\n\t\t1. Change Name\n\t\t2. Change Number\n\t\t3. Change Gmail");
                 printf("\n\t\t...Enter Your Choice : ");
                 fflush(stdin);
                 scanf("%d", &Choice);
@@ -508,3 +512,493 @@ char Delete_contact()
     }
 
 }
+
+/* How it works?
+
+Enter Your Name : Samius Sazin
+
+                .......... WELCOME  Samius Sazin ..........
+
+                LET'S CREATE YOUR PHONEBOOK Samius Sazin
+
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 1
+
+
+Enter Name   :: Rakibul Islam
+Enter Number :: 01799999999
+Enter Gmail  :: rakib@gmail.com
+
+
+                ..........Add Another Contact?..........
+
+                    Enter 'Y' for YES, 'N' for No : Y
+
+Enter Name   :: Azharul Islam
+Enter Number :: 01899999999
+Enter Gmail  :: islam@gmail.com
+
+
+                ..........Add Another Contact?..........
+
+                    Enter 'Y' for YES, 'N' for No : Y
+
+Enter Name   :: Muid Hasan
+Enter Number :: 01611111111
+Enter Gmail  :: muid@gmail.com
+
+
+                ..........Add Another Contact?..........
+
+                    Enter 'Y' for YES, 'N' for No : N
+
+                           RETURNED TO MENU
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 2
+
+
+//All printed in ascending order
+Person 1 Information :
+              Name   :: Azharul Islam
+              Number :: +8801899999999
+              Gmail  :: islam@gmail.com
+Person 2 Information :
+              Name   :: Muid Hasan
+              Number :: +8801611111111
+              Gmail  :: muid@gmail.com
+Person 3 Information :
+              Name   :: Rakibul Islam
+              Number :: +8801799999999
+              Gmail  :: rakib@gmail.com
+
+
+                    .....Return to Menu?.....
+                Enter 'Y' for Return, 'N' for Exit : Y
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 1
+
+
+Enter Name   :: Adib Hosen
+Enter Number :: 0192222222
+Enter Valid Number :: 01922222222
+Enter Gmail  :: adib@gmail.com
+
+
+                ..........Add Another Contact?..........
+
+                    Enter 'Y' for YES, 'N' for No : Y
+
+Enter Name   :: Mehedi Hasan
+Enter Number :: 01511113333
+Enter Gmail  :: mehedi@gmail.com
+
+
+                ..........Add Another Contact?..........
+
+                    Enter 'Y' for YES, 'N' for No : N
+
+                           RETURNED TO MENU
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 2
+
+
+//All printed in ascending order
+Person 1 Information :
+              Name   :: Adib Hosen
+              Number :: +8801922222222
+              Gmail  :: adib@gmail.com
+Person 2 Information :
+              Name   :: Azharul Islam
+              Number :: +8801899999999
+              Gmail  :: islam@gmail.com
+Person 3 Information :
+              Name   :: Mehedi Hasan
+              Number :: +8801511113333
+              Gmail  :: mehedi@gmail.com
+Person 4 Information :
+              Name   :: Muid Hasan
+              Number :: +8801611111111
+              Gmail  :: muid@gmail.com
+Person 5 Information :
+              Name   :: Rakibul Islam
+              Number :: +8801799999999
+              Gmail  :: rakib@gmail.com
+
+
+                    .....Return to Menu?.....
+                Enter 'Y' for Return, 'N' for Exit : Y
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 1
+
+
+Enter Name   :: Maliha Mahmud
+Enter Number :: 01466666666
+Enter Gmail  :: maha@gmail.com
+
+
+                ..........Add Another Contact?..........
+
+                    Enter 'Y' for YES, 'N' for No : N
+
+                           RETURNED TO MENU
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 2
+
+
+//All printed in ascending order
+Person 1 Information :
+              Name   :: Adib Hosen
+              Number :: +8801922222222
+              Gmail  :: adib@gmail.com
+Person 2 Information :
+              Name   :: Azharul Islam
+              Number :: +8801899999999
+              Gmail  :: islam@gmail.com
+Person 3 Information :
+              Name   :: Maliha Mahmud
+              Number :: +8801466666666
+              Gmail  :: maha@gmail.com
+Person 4 Information :
+              Name   :: Mehedi Hasan
+              Number :: +8801511113333
+              Gmail  :: mehedi@gmail.com
+Person 5 Information :
+              Name   :: Muid Hasan
+              Number :: +8801611111111
+              Gmail  :: muid@gmail.com
+Person 6 Information :
+              Name   :: Rakibul Islam
+              Number :: +8801799999999
+              Gmail  :: rakib@gmail.com
+
+
+                    .....Return to Menu?.....
+                Enter 'Y' for Return, 'N' for Exit : Y
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 3
+
+                Enter Name to search : Maliha Mahmud
+
+                Contact Found
+                     Name   ::  Maliha Mahmud
+                     Number ::  +8801466666666
+                     Gmail  ::  maha@gmail.com
+
+
+                    .....Return to Menu?.....
+                Enter 'Y' for Return, 'N' for Exit : Y
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 4
+
+                Enter Contact Name : Maliha Mahmud
+
+                Contact Found
+                     Name   ::  Maliha Mahmud
+                     Number ::  +8801466666666
+                     Gmail  ::  maha@gmail.com
+
+
+                    .....Edit This Contact?.....
+                Enter 'Y' for YES, 'N' for NO : Y
+
+                1. Change Name
+                2. Change Number
+                3. Change Gmail
+                ...Enter Your Choice : 3
+
+                Enter New Gmail : maliha@gmail.com
+
+                Are you Sure?
+                Enter 'Y' for YES, 'N' for NO : Y
+
+                Edit Successfull
+                No Further Contact Found
+                Returned to Menu
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 3
+
+                Enter Name to search : Maliha Mahmud
+
+                Contact Found
+                     Name   ::  Maliha Mahmud
+                     Number ::  +8801466666666
+                     Gmail  ::  maliha@gmail.com
+
+
+                    .....Return to Menu?.....
+                Enter 'Y' for Return, 'N' for Exit : y
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 2
+
+
+//All printed in ascending order
+Person 1 Information :
+              Name   :: Adib Hosen
+              Number :: +8801922222222
+              Gmail  :: adib@gmail.com
+Person 2 Information :
+              Name   :: Azharul Islam
+              Number :: +8801899999999
+              Gmail  :: islam@gmail.com
+Person 3 Information :
+              Name   :: Maliha Mahmud
+              Number :: +8801466666666
+              Gmail  :: maliha@gmail.com
+Person 4 Information :
+              Name   :: Mehedi Hasan
+              Number :: +8801511113333
+              Gmail  :: mehedi@gmail.com
+Person 5 Information :
+              Name   :: Muid Hasan
+              Number :: +8801611111111
+              Gmail  :: muid@gmail.com
+Person 6 Information :
+              Name   :: Rakibul Islam
+              Number :: +8801799999999
+              Gmail  :: rakib@gmail.com
+
+
+                    .....Return to Menu?.....
+                Enter 'Y' for Return, 'N' for Exit : Y
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 5
+
+
+                Enter Name to Delete the Contact : Mehedi Hasan
+
+                        Contact Found.
+                     Name   ::  Mehedi Hasan
+                     Number ::  +8801511113333
+                     Gmail  ::  mehedi@gmail.com
+
+                    .....Are you sure to Delete?.....
+                Enter 'Y' for YES, 'N' for NO : Y
+
+                Deleted Successfully
+
+                No Further Contact Found
+                Returned to Menu
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 1
+
+
+Enter Name   :: Muid Hasan
+Enter Number :: 09811111111
+Enter Gmail  :: muid@gmail.com
+
+
+                ..........Add Another Contact?..........
+
+                    Enter 'Y' for YES, 'N' for No : N
+
+                           RETURNED TO MENU
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 2
+
+
+//All printed in ascending order
+Person 1 Information :
+              Name   :: Adib Hosen
+              Number :: +8801922222222
+              Gmail  :: adib@gmail.com
+Person 2 Information :
+              Name   :: Azharul Islam
+              Number :: +8801899999999
+              Gmail  :: islam@gmail.com
+Person 3 Information :
+              Name   :: Maliha Mahmud
+              Number :: +8801466666666
+              Gmail  :: maliha@gmail.com
+Person 4 Information :
+              Name   :: Muid Hasan
+              Number :: +8801611111111
+              Gmail  :: muid@gmail.com
+Person 5 Information :
+              Name   :: Muid Hasan
+              Number :: +8809811111111
+              Gmail  :: muid@gmail.com
+Person 6 Information :
+              Name   :: Rakibul Islam
+              Number :: +8801799999999
+              Gmail  :: rakib@gmail.com
+
+
+                    .....Return to Menu?.....
+                Enter 'Y' for Return, 'N' for Exit : Y
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 5
+
+
+                Enter Name to Delete the Contact : Muid Hasan
+
+                        Contact Found.
+                     Name   ::  Muid Hasan
+                     Number ::  +8801611111111
+                     Gmail  ::  muid@gmail.com
+
+                    .....Are you sure to Delete?.....
+                Enter 'Y' for YES, 'N' for NO : N
+
+                        Another Contact Found by This Name.
+                     Name   ::  Muid Hasan
+                     Number ::  +8809811111111
+                     Gmail  ::  muid@gmail.com
+
+                    .....Are you sure to Delete?.....
+                Enter 'Y' for YES, 'N' for NO : Y
+
+                Deleted Successfully
+
+                No Further Contact Found
+                Returned to Menu
+
+                .......... PHONEBOOK MENUE ..........
+
+                1. Add new contact
+                2. View Contact List
+                3. Search Contact
+                4. Update Details on Existing Contact
+                5. Delete Contact
+                6. Exit
+                ...Enter Your Choice : 2
+
+
+//All printed in ascending order
+Person 1 Information :
+              Name   :: Adib Hosen
+              Number :: +8801922222222
+              Gmail  :: adib@gmail.com
+Person 2 Information :
+              Name   :: Azharul Islam
+              Number :: +8801899999999
+              Gmail  :: islam@gmail.com
+Person 3 Information :
+              Name   :: Maliha Mahmud
+              Number :: +8801466666666
+              Gmail  :: maliha@gmail.com
+Person 4 Information :
+              Name   :: Muid Hasan
+              Number :: +8801611111111
+              Gmail  :: muid@gmail.com
+Person 5 Information :
+              Name   :: Rakibul Islam
+              Number :: +8801799999999
+              Gmail  :: rakib@gmail.com
+
+
+                    .....Return to Menu?.....
+                Enter 'Y' for Return, 'N' for Exit : N
+
+*/
