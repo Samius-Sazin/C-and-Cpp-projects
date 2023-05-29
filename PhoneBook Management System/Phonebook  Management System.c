@@ -40,13 +40,13 @@ int main()
     printf("Enter Your Name : ");
     scanf("%[^\n]s", &Name);
 
-    printf("\n\t\t..........\ WELCOME  %s ..........\n\n", Name);
+    printf("\n\t\t.......... WELCOME  %s ..........\n\n", Name);
     printf("\t\tLET'S CREATE YOUR PHONEBOOK %s\n\n", Name);
 
     do
     {
         ANSWER = '-1';
-        printf("\n\t\t..........\ PHONEBOOK MENUE ..........\n\n");
+        printf("\n\t\t.......... PHONEBOOK MENUE ..........\n\n");
         printf("\t\t1. Add new contact\n");
         printf("\t\t2. View Contact List\n");
         printf("\t\t3. Search Contact\n");
