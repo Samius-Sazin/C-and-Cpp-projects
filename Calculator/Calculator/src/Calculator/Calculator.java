@@ -1,13 +1,12 @@
 /*
-**********PhoneBook Management System**********
+**********A Simple Calculator**********
             Name : Samius Sazin
             ID: 0242220005101236
             Batch_63
             Department of C.S.E
             Daffodil International University
             
-            Starting Date   : 24.05.2023
-            Completion Date : 29.05.2023
+            Date : September 26, 2023
 */
 
 package Calculator;
