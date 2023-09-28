@@ -13,7 +13,7 @@ public class newPassword_reset extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
@@ -170,22 +170,22 @@ public class newPassword_reset extends javax.swing.JFrame {
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void newpas_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newpas_ActionPerformed
+    private void newpas_ActionPerformed(java.awt.event.ActionEvent evt) {                                        
         newpas = newpas_.getText();
-    }//GEN-LAST:event_newpas_ActionPerformed
+    }                                       
 
-    private void cancel_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancel_ActionPerformed
+    private void cancel_ActionPerformed(java.awt.event.ActionEvent evt) {                                        
         newpas = "";
         retypeNewPass = "";
         
         new unsuccessfull_window().control_Unsuccessful_popUp_window_signUp_forgotPassword(); //Show "cancelation successfull"; and open login window
 
         dispose();
-    }//GEN-LAST:event_cancel_ActionPerformed
+    }                                       
 
-    private void proceed_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_proceed_ActionPerformed
+    private void proceed_ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(newpas_.getText().isEmpty() || retypeNewPass_.getText().isEmpty()){
             new unsuccessfull_window().control_unsuccessful_popUp_window_proceed();
         }
@@ -199,31 +199,34 @@ public class newPassword_reset extends javax.swing.JFrame {
             new successfull_window().control_successful_popUp_window_proceed();
             
         }
-    }//GEN-LAST:event_proceed_ActionPerformed
+    }                                        
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         System.exit(0);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }                                        
 
-    private void retypeNewPass_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_retypeNewPass_ActionPerformed
+    private void retypeNewPass_ActionPerformed(java.awt.event.ActionEvent evt) {                                               
         retypeNewPass = retypeNewPass_.getText();
-        if(newpas != retypeNewPass){
+        if(newpas.compareTo(retypeNewPass) != 0){
             new unsuccessfull_window().control_unsuccessful_popUp_window_retypeNewPass();
             newpas_.setText("");
             retypeNewPass_.setText("");
         }
-    }//GEN-LAST:event_retypeNewPass_ActionPerformed
+    }                                              
 
-    public static void main(String args[]) {
+    
+    
+    
+//    public static void main(String args[]) {
+//
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new newPassword_reset().setVisible(true);
+//            }
+//        });
+//    }
 
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new newPassword_reset().setVisible(true);
-            }
-        });
-    }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton cancel_;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
@@ -235,5 +238,5 @@ public class newPassword_reset extends javax.swing.JFrame {
     private javax.swing.JButton proceed_;
     private javax.swing.JLabel resest_password;
     private javax.swing.JTextField retypeNewPass_;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
